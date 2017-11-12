@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="@drawable/bg"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About App"
+            android:layout_marginTop="20dp"
+            android:textColor="#000"
+            android:textSize="32dp"
+            android:id="@+id/head"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content"
+            android:text="With home automation technology, you can control devices in your home from the mobile device. With our project Tech-O-Home, we are focusing on delivering solutions for the smart homes in which nearly everything -- lights, appliances, electrical outlets, heating and cooling systems -- are hooked up to a remotely controllable network. Now everything is literally at your fingertips."
+            android:layout_below="@id/head"
+            android:id="@+id/cont"
+            android:textSize="18dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/found"
+            android:textSize="18dp"
+            android:layout_marginTop="6dp"
+            android:layout_below="@id/cont"
+            android:text="App Manuals:\n
+1. Login (if registered) or Sign Up (to register)\n
+2. Allow app to tuen on Bluetooth\n
+3. Choose your room to control wirelessly\n
+4. Simply Tap on Buttons to Turn ON/OFF devices\n
+5. Disconnect if you want to switch room
+"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:layout_below="@id/found"
+            android:textStyle="italic"
+            android:layout_centerHorizontal="true"
+            android:text="Tech-O-Home\nApp Developer: Ajay"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:textColor="#0b84aa"
+            android:id="@+id/backusa"
+            />
+        <!--
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Bluetooth ON/OFF"
+            />
+         -->
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:layout_width="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Device placed in "
+        android:textSize="40dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:id="@+id/assign"/>
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/assign"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:textSize="32dp"
+            android:layout_height="wrap_content"
+            android:text="  Security"
+            android:id="@+id/s"/>
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:textSize="32dp"
+            android:id="@+id/b"
+            android:layout_height="wrap_content"
+            android:text="  Bedroom"/>
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:textSize="32dp"
+            android:id="@+id/d"
+            android:layout_height="wrap_content"
+            android:text="  Drawing Room"/>
+
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="  Kitchen"
+            android:id="@+id/k"
+            android:textSize="32dp"/>
+
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="  Lawn"
+            android:id="@+id/l"
+            android:textSize="32dp"/>
+
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="  Bathroom"
+            android:id="@+id/t"
+            android:textSize="32dp"/>
+
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="  Balcony"
+            android:id="@+id/c"
+            android:textSize="32dp"/>
+
+    </RadioGroup>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Assign"
+        android:id="@+id/ok"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.abc.test2.home">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="56dp"
+        android:id="@+id/seci"
+        android:src="@drawable/sec"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/seci"
+        android:layout_marginTop="5dp"
+        android:id="@+id/bedi"
+        android:src="@drawable/bed"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/bedi"
+        android:id="@+id/bathi"
+        android:src="@drawable/bath"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/bathi"
+        android:layout_marginTop="5dp"
+        android:id="@+id/bed2i"
+        android:src="@drawable/bed"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/bed2i"
+        android:id="@+id/bath2i"
+        android:src="@drawable/bath"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/drawi"
+        android:layout_below="@id/bath2i"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/draw"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/dini"
+        android:layout_below="@id/drawi"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/din"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/kiti"
+        android:layout_height="150dp"
+        android:layout_below="@id/dini"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/kitchen"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/kiti"
+        android:id="@+id/balci"
+        android:src="@drawable/balc"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/balci"
+        android:id="@+id/lawni"
+        android:src="@drawable/lawn"/>
+
+    <Button
+        android:id="@+id/sec"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="135dp"
+        android:layout_centerHorizontal="true"
+        android:text="Security" />
+    <Button
+        android:id="@+id/bed"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_below="@id/seci"
+        android:layout_marginLeft="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        android:text="Bedroom 1" />
+
+    <Button
+        android:id="@+id/bed2"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_below="@id/bathi"
+        android:layout_marginLeft="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        android:text="Bedroom 2" />
+    <Button
+        android:id="@+id/draw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="85dp"
+        android:layout_below="@id/bath2i"
+        android:text="Drawing Room" />
+
+    <Button
+        android:id="@+id/din"
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="105dp"
+        android:layout_below="@id/draw"
+        android:text="Dining Room" />
+    <Button
+        android:id="@+id/kitchen"
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="150dp"
+        android:layout_below="@id/dini"
+        android:layout_marginTop="85dp"
+        android:text="Kitchen" />
+    <Button
+        android:id="@+id/lawn"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="85dp"
+        android:layout_below="@id/balci"
+        android:text="Lawn"/>
+    <Button
+        android:id="@+id/bath"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="85dp"
+        android:layout_below="@id/bedi"
+        android:text="Bathroom 1" />
+    <Button
+        android:id="@+id/bath2"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="85dp"
+        android:layout_below="@id/bed2i"
+        android:text="Bathroom 2" />
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/balc"
+        android:text="Balcony"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="85dp"
+        android:layout_below="@id/kiti"
+        />
+
+</RelativeLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

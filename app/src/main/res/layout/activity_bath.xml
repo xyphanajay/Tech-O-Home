@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:id="@+id/bathimg"
+        android:src="@drawable/bath"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bathroom 1"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:id="@+id/bathtxt"
+        android:layout_below="@id/bathimg"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"
+        android:textSize="32dp"/>
+    <Button
+        android:id="@+id/backt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disconnect"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bathtxt"
+        android:textSize="22dp"
+        android:text="LED Light"
+        android:id="@+id/led"
+        />
+    <ToggleButton
+        android:layout_width="42dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/bathtxt"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/my_btn_toggle"
+        android:id="@+id/ledb"
+        android:textOff="OFF"
+        android:textOn="ON"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/led"
+        android:textSize="22dp"
+        android:text="Exhaust Fan"
+        android:id="@+id/fan"
+        />
+    <ToggleButton
+        android:layout_width="42dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/led"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/my_btn_toggle"
+        android:id="@+id/fanb"
+        android:textOff="OFF"
+        android:textOn="ON"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/geyserb"
+        android:layout_below="@id/fan"
+        android:text="Geyser"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:textSize="22dp"
+        android:id="@+id/geyser"
+        android:layout_marginTop="20dp"/>
+
+    <ToggleButton
+        android:layout_width="42dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/fan"
+        android:background="@drawable/my_btn_toggle"
+        android:text="Test"
+        android:id="@+id/geyserb"
+        android:textOff="OFF"
+        android:layout_marginTop="20dp"
+        android:textOn="ON"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/geyser"
+        android:textSize="22dp"
+        android:text="Washing Machine"
+        android:id="@+id/washing"
+        />
+    <ToggleButton
+        android:layout_width="42dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/geyser"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/my_btn_toggle"
+        android:id="@+id/washingb"
+        android:textOff="OFF"
+        android:textOn="ON"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        />
+
+
+</RelativeLayout>
+</ScrollView>

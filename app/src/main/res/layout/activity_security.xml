@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:id="@+id/secimg"
+            android:src="@drawable/sec"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Security"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:id="@+id/sectxt"
+            android:layout_below="@id/secimg"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000"
+            android:textSize="32dp"/>
+        <Button
+            android:id="@+id/backs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Disconnect"
+            android:layout_marginBottom="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:showText="true"
+            android:layout_below="@id/sectxt"
+            android:textSize="22dp"
+            android:id="@+id/door"
+            android:text="Door Lock"
+            android:textOn="Close"
+            />
+
+        <ToggleButton
+            android:layout_width="82dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/sectxt"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/my_btn_toggle"
+            android:id="@+id/lock"
+            android:textOff="Closed"
+            android:textOn="Open"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            />
+        <VideoView
+            android:layout_width="360dp"
+            android:layout_height="240dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/door"
+            android:layout_centerInParent="false"
+            android:id="@+id/vv"/>
+
+    </RelativeLayout>
